@@ -93,6 +93,21 @@ Git 버전확인 명령어 : git —version
 
 
 
+### Git 초기설정
+
+설치한 Git에 본인의 사용자명과 메일 주소를 등록 합니다. 등록한 사용자명과 메일 주소는 나중에 변경이력등에 표시됩니다.
+
+config 명령어를 이용해 설정을 진행하겠습니다.
+
+사용자명 등록 명령어 : git config —global user.name 본인이름 or 닉네임
+
+사용자 이메일 등록 명령어 : git config —global user.email 메일주소
+
+![예시화면](https://user-images.githubusercontent.com/47494240/54027337-89195b00-41e4-11e9-90c2-43351e71a69e.png)
+
+
+
+
 ## Git Remote
 
 *명령어: git remote*
