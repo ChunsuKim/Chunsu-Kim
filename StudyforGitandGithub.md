@@ -81,7 +81,7 @@ Git의 '커밋' 실행은 '작업트리'에 있는 변경 내용을 저장소에
 
 Mac의 iTerm이나 Terminal에서 Git을 이용하려면, Git 웹사이트에서 설치 파일을 다운로드하여 설치해야 합니다.  또한 Homebrew를 이용하는 방법도 있습니다. 
 
-Git 링크 : http://git-scm.com/ Homebrew 링크 : https://brew.sh/index_ko
+Homebrew를 이용하는 것을 추천 합니다. Homebrew 링크 : https://brew.sh/index_ko Git 링크 : http://git-scm.com/ 
 
 설치가 끝나면, Terminal이나 iTerm을 실행 합니다.
 
