@@ -89,7 +89,7 @@ Git 링크 : http://git-scm.com/ Homebrew 링크 : https://brew.sh/index_ko
 
 Git 버전확인 명령어 : git —version
 
-![예시화면](https://github.com/ChunsuKim/Chunsu-Kim/issues/1#issue-418748512)
+![예시화면](https://user-images.githubusercontent.com/47494240/54026271-9e8c8600-41e0-11e9-8cc7-c327626572de.png)
 
 
 
