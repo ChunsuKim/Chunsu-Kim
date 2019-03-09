@@ -87,7 +87,7 @@ Homebrew를 이용하는 것을 추천 합니다. Homebrew 링크 : https://brew
 
 확인을 위해 version 명령어를 실행합니다. Git의 버전이 표시되면 설치에 성공한 것입니다. 출력되는 문자열은 설치된 환경과 버전에 따라 다를 수 있습니다.
 
-Git 버전확인 명령어 : git —version
+Git 버전확인 명령어 : *git —version*
 
 ![예시화면](https://user-images.githubusercontent.com/47494240/54026271-9e8c8600-41e0-11e9-8cc7-c327626572de.png)
 
@@ -99,9 +99,9 @@ Git 버전확인 명령어 : git —version
 
 config 명령어를 이용해 설정을 진행하겠습니다.
 
-사용자명 등록 명령어 : git config —global user.name 본인이름 or 닉네임
+사용자명 등록 명령어 : *git config —global user.name 본인이름 or 닉네임*
 
-사용자 이메일 등록 명령어 : git config —global user.email 메일주소
+사용자 이메일 등록 명령어 : *git config —global user.email 메일주소*
 
 ![예시화면](https://user-images.githubusercontent.com/47494240/54027337-89195b00-41e4-11e9-90c2-43351e71a69e.png)
 
@@ -113,16 +113,91 @@ config 명령어를 이용해 설정을 진행하겠습니다.
 
 #### 우선 gitTest라는 Desktop에 생성해 줍니다. gitTest 폴더를 Git의 저장소로 등록하려면, 해당 폴더로 이동하여 init 명령어를 사용합니다. ####
 
-따라해보기) iTerm이나 Terminal을 실행한 후 먼저 ls 명령어를 입력하여 본인이 어디 위치에 있는지 확인 합니다. ls 명령어를 입력하면 이동할수 있는 폴더명과 파일 이름들이 나옵니다.
+따라해보기) iTerm이나 Terminal을 실행한 후 먼저 *ls* 명령어를 입력하여 본인이 어디 위치에 있는지 확인 합니다. ls 명령어를 입력하면 이동할수 있는 폴더명과 파일 이름들이 나옵니다.
 
-그후 cd Desktop을 입력하여 Desktop 폴더로 이동합니다.
+그후 *cd Desktop*을 입력하여 Desktop 폴더로 이동합니다.
 
-저는 gitTest 폴더를 이미 생성하였지만 이글을 보시는 분들은 새로 생성하셔야 하니 mkdir gitTest 라고 입력하여 gitTest폴더를 생성합니다. 다시 ls를 입력하면 gitTest라는 폴더가 보입니다. 그후 다시 cd gitTest를 입력하여 폴더로 이동합니다.
+저는 gitTest 폴더를 이미 생성하였지만 이글을 보시는 분들은 새로 생성하셔야 하니 *mkdir gitTest* 라고 입력하여 gitTest폴더를 생성합니다. 다시 *ls*를 입력하면 gitTest라는 폴더가 보입니다. 그후 다시 *cd gitTest*를 입력하여 폴더로 이동합니다.
 
-이제 저장소 등록 명령어인 git init을 입력합니다. 전 이미 해놔서 다른 메세지가 뜨지만 처음 폴더를 저장소로 등록하면 이렇게 출력 됩니다. Initialized empty Git repository in/Users/yourname/Desktop/gitTest/.git/ 이 메세지가 출력되었다면 성공적으로 완료 된 겁니다.
+이제 저장소 등록 명령어인 *git init*을 입력합니다. 전 이미 해놔서 다른 메세지가 뜨지만 처음 폴더를 저장소로 등록하면 이렇게 출력 됩니다. Initialized empty Git repository in/Users/yourname/Desktop/gitTest/.git/ 이 메세지가 출력되었다면 성공적으로 완료 된 겁니다.
 
 ![예시화면](https://user-images.githubusercontent.com/47494240/54070277-48cbe280-42a1-11e9-8591-fd9497095bf6.png)
 
+
+
+### 파일 커밋(commit)하기
+
+우선 iTerm이나 Terminal에서 자주 사용하는 명령어를 보시겠습니다.
+
+> ls 목록조회, cd 경로이동, pwd 경로확인
+>
+> mkdir 디렉토리생성, rmdir 디렉토리 삭제
+>
+> touch 파일생성, cp 복사, mv 이동, rm 삭제
+>
+> vi / vim / nano 등등 해당에디터 실행, cat 파일내용출력, head / tail 파일 상단/하단 내용 출력
+>
+> man 명령어메뉴얼확인, history 입력한명령어목록출력, ; 다중명령어실행
+>
+> open 지정한경로를 Finder로 열거나 파일실행
+>
+> chmod 파일속성변경
+>
+> clear 화면 클리어, exit 종료
+
+#### gitTest 폴더에 *gitstudy.txt*파일을 추가하고, 원격 저장소에 파일을 등록해보겠습니다.
+
+우선 iTerm이나 Terminal을 실행시킨 후 cd 명령어를 이용하여 gitTest폴더로 이동합니다.
+
+gitTest폴더로 이동 후 *touch gitstudy.txt* 라는 명령어를 입력하여 gitstudy.txt 파일을 생성합니다. 그후 *vim gitstudy.txt* 명령어를 입력하여 vim 에디터로 들어가겠습니다.
+
+![예시화면](https://user-images.githubusercontent.com/47494240/54070638-b712a400-42a5-11e9-8cba-5fc5ca639297.png)
+
+vim 에디터에 들어가면 아래와 같은 화면이 나옵니다. 아무것도 입력할 수 없고, 처음 접하신 분들은 이게 뭐지라고 생각하게 됩니다. 
+
+![화면](https://user-images.githubusercontent.com/47494240/54070643-bc6fee80-42a5-11e9-9a0c-a0527db9c10a.png)
+
+그럼 vim에디터에서 메세지를 입력할 수 있도록 키보드 i키를 누릅니다. 그럼 아래 화면과 같이 밑에 insert라는 메세지가 출력되며 이제 메세지를 입력할 수 있게 됩니다.
+
+![화면](https://user-images.githubusercontent.com/47494240/54070644-c1cd3900-42a5-11e9-81dc-df1faae35c0c.png)
+
+이제 여기에 아래화면 처럼 hello, git 이라고 메세지를 입력합니다. 메세지는 아무거나 입력해도 상관 없습니다.
+
+![화면](https://user-images.githubusercontent.com/47494240/54070646-c5f95680-42a5-11e9-95e1-338b9931ef82.png)
+
+메세지를 다 입력한 후 키보드의 esc키를 누룬후 저장후 vim에디터에서 나가기 명령어인 *:wq* 라고 입력 합니다. 아래화면 참조하세요.
+
+![화면](https://user-images.githubusercontent.com/47494240/54070649-ca257400-42a5-11e9-89cf-dd1decdc09e9.png) 
+
+이제 vim에디터에서 빠져나와 아래와 같이 iTerm이나 Terminal 화면이 보일 겁니다. 그럼 메세지가 입력이 잘 되었는지 *cat gitstudy.txt* 라는 명령어를 입력하여 메세지를 확인 합니다. 본인이 입력한 메세지가 출력된다면 성공적으로 마무리 된 것 입니다.
+
+![화면](https://user-images.githubusercontent.com/47494240/54070652-ceea2800-42a5-11e9-9a39-477d778444fa.png)
+
+Git의 관리 하에 있는 폴더의 작업트리와 인덱스 상태를 확인하려면, status 명령어를 사용합니다. 명령어 *git status*를 타이핑 합니다. 아래화면을 보시면 저는 여러 파일이 있어서 여러가지 파일이 뜨지만 따라하시는 분들은 Untracked files: 라는 메세지부터 파일명까지 뜨실 겁니다.
+
+![화면](https://user-images.githubusercontent.com/47494240/54070886-453c5980-42a9-11e9-9630-2713ab0ca13e.png)
+
+이력 추적 대상이 되지 않은 파일(untracked files)로 gitstudy.txt 파일이 보입니다. 처음 한번만 인덱스에 등록하면 추적 대상으로 등록할 수 있습니다.
+
+파일을 인덱스에 등록하는 명령어는 add 입니다. 뒤에 파일명을 붙여 인덱스에 등록할 파일을 지정합니다. 한칸 띄어쓰기해서 여러개 파일을 한번에 지정할수도 있습니다.
+
+인덱스에 등록하는 명령어 *git add gitstudy.txt* 를 입력하고 다시 상태를 확인하는 *git status* 를 입력하면 아래화면처럼 출력 됩니다.
+
+![화면](https://user-images.githubusercontent.com/47494240/54070896-59805680-42a9-11e9-850e-0d0b8ba02775.png)
+
+인덱스에 gitstudy.txt파일이 추가되었으니 커밋 준비는 끝입니다. 이제 commit 명령어를 실행해 커밋을 진행합니다. commit 명령어 포맷은 다음과 같습니다. *git commit -m "댓글"* 
+
+이제 명령어를 입력해 보겠습니다. *git commit -m "first commit"*을 입력 합니다. 그 후 다시 상태확인을 위해 *git status*를 입력합니다. 아래화면 참조
+
+![화면](https://user-images.githubusercontent.com/47494240/54070903-6604af00-42a9-11e9-985f-13b6dacd5177.png)
+
+이제 모든 변경사항이 커밋되었습니다.
+
+저장소의 변경이력을 확인해 봅시다. 저장소 변경 이력을 보려면 log 명령어를 사용합니다. *git log* 를 입력 하면 아래와 같이 화면이 출력 됩니다. 아래 화면에서 빠져 나오는 명령어는 q를 누르시면 됩니다.
+
+![화면](https://user-images.githubusercontent.com/47494240/54070921-72890780-42a9-11e9-9ff9-96a03060a9ea.png)
+
+참고) *gitk 라고 입력하시면 변경이력을 GUI에서 확인할 수 있습니다. git을 설치할 때 gitk라는 툴도 동시에 설치됩니다.
 
 
 
