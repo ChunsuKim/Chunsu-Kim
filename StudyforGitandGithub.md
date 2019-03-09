@@ -107,6 +107,25 @@ config 명령어를 이용해 설정을 진행하겠습니다.
 
 
 
+### 새 저장소 만들기
+
+#### 먼저 로컬에 gitTest라는 이름으로 빈 폴더를 만들어 로컬 저장소로 등록해 보겠습니다. ####
+
+#### 우선 gitTest라는 Desktop에 생성해 줍니다. gitTest 폴더를 Git의 저장소로 등록하려면, 해당 폴더로 이동하여 init 명령어를 사용합니다. ####
+
+iTerm이나 Terminal을 실행한 후 먼저 ls 명령어를 입력하여 본인이 어디 위치에 있는지 확인 합니다. ls 명령어를 입력하면 이동할수 있는 폴더명과 파일 이름들이 나옵니다.
+
+그후 cd Desktop을 입력하여 Desktop 폴더로 이동합니다.
+
+저는 gitTest 폴더를 이미 생성하였지만 이글을 보시는 분들은 새로 생성하셔야 하니 mkdir gitTest 라고 입력하여 gitTest폴더를 생성합니다. 다시 ls를 입력하면 gitTest라는 폴더가 보입니다. 그후 다시 cd gitTest를 입력하여 폴더로 이동합니다.
+
+이제 저장소 등록 명령어인 git init을 입력합니다. 전 이미 해놔서 다른 메세지가 뜨지만 처음 폴더를 저장소로 등록하면 이렇게 출력 됩니다. Initialized empty Git repository in/Users/yourname/Desktop/gitTest/.git/ 이 메세지가 출력되었다면 성공적으로 완료 된 겁니다.
+
+![예시화면](https://user-images.githubusercontent.com/47494240/54070277-48cbe280-42a1-11e9-8591-fd9497095bf6.png)
+
+
+
+
 
 ## Git Remote
 
