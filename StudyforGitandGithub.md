@@ -77,6 +77,7 @@ Git의 '커밋' 실행은 '작업트리'에 있는 변경 내용을 저장소에
 
 
 
+#Practice Git의 기본
 ### Git 설치
 
 Mac의 iTerm이나 Terminal에서 Git을 이용하려면, Git 웹사이트에서 설치 파일을 다운로드하여 설치해야 합니다.  또한 Homebrew를 이용하는 방법도 있습니다. 
