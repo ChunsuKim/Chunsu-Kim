@@ -279,3 +279,37 @@ remote 명령어: *git remote add 등록명 url*
 push 명령어: *git push [repository] [refspec]…*
 
 다음 명령어를 실행해 원격 저장소 origin에 커밋을 push합니다. 실행 옵션에서 한번 *-u* 를 지정하면, 이후에는 브랜치명 지정을 생략할 수 있습니다. 단 비어있는 원격 저장소에 최초로 push했을 때는 원격 저장소명과 브랜치명을 생략할 수 없습니다.
+
+명령어를 입력해 봅니다. *git push origin master* 성공적으로 push가 되었으면 아래 스크린처럼 됩니다.
+
+![화면](https://user-images.githubusercontent.com/47494240/54083700-a2e4aa80-436a-11e9-8b41-ef4f1c91c84d.png)
+
+하지만 아래 스크린처럼 에러 메세지가 뜬다면 다음 스탭을 따라합니다.
+
+![화면](https://user-images.githubusercontent.com/47494240/54083705-b42db700-436a-11e9-9c44-b9616722722a.png)
+
+명령어를 타이핑합니다. *git pull —allow-unrelated-histories origin master* 아래 스크린참조 그후 다시 push를 실행합니다. *git push -u origin master* 그럼 push가 성공했다는 메세지가 나옵니다.
+
+![화면](https://user-images.githubusercontent.com/47494240/54083709-c0b20f80-436a-11e9-872f-fd64f78eb84f.png)
+
+이제 Github에 접속해보면 gitstudy.txt파일이 아래 스크린처럼 push된것을 확인할수 있습니다.
+
+![화면](https://user-images.githubusercontent.com/47494240/54083769-adec0a80-436b-11e9-8379-50f586fd714b.png)
+
+
+
+### 원격 저장소 복제(Clone)하기
+
+원격 저장소를 복제하여 다른 곳에서도 작업을 할 수 있도록 만들어 봅시다.
+
+내가 다른 사용자가 됐다고 가정하고 아까 Push했던 원격 저장소의 파일을 내PC로 복사해 오겠습니다.
+
+저장소를 복제하려면 clone 명령어를 이용합니다. 명령어: *git clone 원격저장소URL 폴더명*
+
+명령어를 입력합니다. *git clone https://github.com/ChunsuKim/gitTest gitTest2*
+
+gitTest2라는 새폴더로 Github에 있는 파일들을 복제한다는 뜻입니다. 아래 화면참조
+
+![화면](https://user-images.githubusercontent.com/47494240/54083988-6e72ed80-436e-11e9-805b-ddbe28cb1155.png)
+
+*ls* 를 입력해보면 gitTest2라는 폴더가 생성되었고, *cd gitTest2* 를 입력해 새폴더로 이동해 다시 *ls* 를 입력하면 Github의 파일들이 복제된 것을 확인 할수 있습니다. 위 그림 참조.
