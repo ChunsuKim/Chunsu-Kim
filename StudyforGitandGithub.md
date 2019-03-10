@@ -355,3 +355,37 @@ vim 에디터에서 다시 i키를 누른후 아래와 같이 입력합니다. a
 이제 gitstudy.txt 파일이 변경되었는지 확인해 보겠습니다. 명령어 *cat gitstudy.txt* 라고 입력하시면 아래 화면과 같이 출력되면 성공적으로 pull이 되었습니다.
 
 ![화면](https://user-images.githubusercontent.com/47494240/54084356-f0fdac00-4372-11e9-810e-f92e3653606f.png)
+
+
+
+### Summary
+
+#### Git 명령어
+
+*git config —global user.name 이름* : 이름설정
+
+*git config —global user.email 이메일주소* : 이메일 주소 설정
+
+
+
+*git init* : Git 명령어를 사용할 수 있는 디렉토리 지정
+
+*git status* : 현재 상태 확인
+
+*git add 파일명.확장자* : Git 주목 리스트에 파일을 추가
+
+*git add .* : 현재 디렉토리의 모든 파일을 추가
+
+*git commit -m "코멘트"* : 코멘트와 함께 커밋하기
+
+
+
+*git remote add origin https://github.com/username/userfolder* : 로컬과 원격 저장소를 연결
+
+*git remote -v* : 연결상태 확인
+
+*git push origin master* : Github로 푸시실행
+
+*git pull origin master* : Github로 풀 실행
+
+*git clone 원격저장소URL 새폴더명* : 원격저장소 Github URL상의 파일을 새폴더로 복제
