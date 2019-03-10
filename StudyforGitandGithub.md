@@ -188,7 +188,7 @@ Git의 관리 하에 있는 폴더의 작업트리와 인덱스 상태를 확인
 
 인덱스에 gitstudy.txt파일이 추가되었으니 커밋 준비는 끝입니다. 이제 commit 명령어를 실행해 커밋을 진행합니다. commit 명령어 포맷은 다음과 같습니다. *git commit -m "댓글"* 
 
-이제 명령어를 입력해 보겠습니다. *git commit -m "first commit"*을 입력 합니다. 그 후 다시 상태확인을 위해 *git status*를 입력합니다. 아래화면 참조
+이제 명령어를 입력해 보겠습니다. *git commit -m "first commit"* 을 입력 합니다. 그 후 다시 상태확인을 위해 *git status*를 입력합니다. 아래화면 참조
 
 ![화면](https://user-images.githubusercontent.com/47494240/54070903-6604af00-42a9-11e9-985f-13b6dacd5177.png)
 
@@ -260,12 +260,22 @@ Github에 접속하여 계정 생성 후 로그인 합니다. 새로운 레파�
 
 
 
-## Git Remote
+### 원격 저장소에 푸시(Push)하기
 
-*명령어: git remote*
+#### 원격 저장소에 로컬 저장소의 이력을 Push해보겠습니다.
 
-원격 저장소를 관리할 수 있는 명령어
+원격 저장소의 주소는 이름으로 기록해 둘 수 있습니다. 기록 해두면 push 할 때마다 긴 원격 저장소의 주소를 입력 할 필요가 없습니다. 우선 [origin]이라는 이름으로 원격 저장소를 등록하고 push할 예정입니다.
 
-git remote add *원격저장소이름* https://github.com/깃허브폴더/파일명
+원격 저장소를 추가하려면 remote 명령어를 사용합니다.
 
-ex) git remote add test https://github.com/Chunsu-Kim/StudyforGitandGithub.md
+remote 명령어: *git remote add 등록명 url*
+
+명령어를 입력해 remote 해보겠습니다. *git remote add origin https://github.com/ChunsuKim/gitTest*
+
+![화면](https://user-images.githubusercontent.com/47494240/54082087-9f91f480-4353-11e9-8558-0eaaaef7e2f9.png)
+
+저장소를 push 하려면, push 명령어를 사용합니다. [repository]는 push 경로의 주소, [refspec]은 push 할 브랜치를 지정합니다. 브랜치에 대한 내용은 나중에 자세하게 설명하겠습니다. 
+
+push 명령어: *git push [repository] [refspec]…*
+
+다음 명령어를 실행해 원격 저장소 origin에 커밋을 push합니다. 실행 옵션에서 한번 *-u* 를 지정하면, 이후에는 브랜치명 지정을 생략할 수 있습니다. 단 비어있는 원격 저장소에 최초로 push했을 때는 원격 저장소명과 브랜치명을 생략할 수 없습니다.
