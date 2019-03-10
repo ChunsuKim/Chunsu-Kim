@@ -316,9 +316,9 @@ gitTest2라는 새폴더로 Github에 있는 파일들을 복제한다는 뜻입
 
 
 
-### 저장소에 다시 푸시(Push)하기
+### 원격저장소에 다시 푸시(Push)하기
 
-이번에는 복제한 로컬 저장소에서 다시 원격 저장소로 파일을 푸시(push) 해보겠습니다.
+이번에는 로컬 저장소에서 파일을 약간 수정하여 다시 원격 저장소로 파일을 푸시(push) 해보겠습니다.
 
 우선 다시 gitTest폴더내에 있는 gitstudy.txt파일을 vim에디터로 편집해 보겠습니다.
 
@@ -338,3 +338,20 @@ vim 에디터에서 다시 i키를 누른후 아래와 같이 입력합니다. a
 
 ![화면](https://user-images.githubusercontent.com/47494240/54084240-a596ce00-4371-11e9-9eaf-18d11ca65804.png)
 
+
+
+### 원격 저장소에서 풀(Pull)해오기
+
+원격 저장소에서 gitTest2 폴더로 최신 변경 내용을 가져와 보겠습니다.
+
+먼저 *cd gitTest2* 를 입력하여 gitTest2폴더로 이동합니다. 
+
+![화면](https://user-images.githubusercontent.com/47494240/54084346-d4fa0a80-4372-11e9-87fb-edb1fc564c63.png)
+
+이제 명령어 *git pull origin master* 라고 입력합니다. 그럼 좀아까 변경한 파일들이 gitTest2로 업데이트 됩니다.
+
+![화면](https://user-images.githubusercontent.com/47494240/54084353-e3482680-4372-11e9-858e-a528de7cdfa5.png)
+
+이제 gitstudy.txt 파일이 변경되었는지 확인해 보겠습니다. 명령어 *cat gitstudy.txt* 라고 입력하시면 아래 화면과 같이 출력되면 성공적으로 pull이 되었습니다.
+
+![화면](https://user-images.githubusercontent.com/47494240/54084356-f0fdac00-4372-11e9-810e-f92e3653606f.png)
