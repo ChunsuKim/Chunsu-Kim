@@ -313,3 +313,28 @@ gitTest2라는 새폴더로 Github에 있는 파일들을 복제한다는 뜻입
 ![화면](https://user-images.githubusercontent.com/47494240/54083988-6e72ed80-436e-11e9-805b-ddbe28cb1155.png)
 
 *ls* 를 입력해보면 gitTest2라는 폴더가 생성되었고, *cd gitTest2* 를 입력해 새폴더로 이동해 다시 *ls* 를 입력하면 Github의 파일들이 복제된 것을 확인 할수 있습니다. 위 그림 참조.
+
+
+
+### 저장소에 다시 푸시(Push)하기
+
+이번에는 복제한 로컬 저장소에서 다시 원격 저장소로 파일을 푸시(push) 해보겠습니다.
+
+우선 다시 gitTest폴더내에 있는 gitstudy.txt파일을 vim에디터로 편집해 보겠습니다.
+
+*cd ..* 을 입력하여 gitTest폴더로 이동후 *vim gitstudy.txt* 를 입력하여 vim 에디터로 들어갑니다.
+
+![화면](https://user-images.githubusercontent.com/47494240/54084122-1210cd80-4370-11e9-99be-788a7c48a032.png)
+
+vim 에디터에서 다시 i키를 누른후 아래와 같이 입력합니다. add git test 입력 후 esc키를 누룬후 다시 :wq를 입력하여 빠져나옵니다.
+
+![화면](https://user-images.githubusercontent.com/47494240/54084113-f86f8600-436f-11e9-9f35-b5b059cb5138.png)
+
+이제 다시 add를 실행 후 commit을 하겠습니다. *git add gitstudy.txt* 입력 후 *git commit -m "add 설명을 추가함"* 아래 화면 참조
+
+![화면](https://user-images.githubusercontent.com/47494240/54084125-281e8e00-4370-11e9-80c4-d64998d90e60.png)
+
+그 후 *git push* 를 입력 합니다. 그럼 위 화면처럼 push가 성공한 것을 확인 하실수 있습니다. Github상에 접속하셔서 확인하셔도 바뀐것을 알수 있습니다. 아래 화면참조
+
+![화면](https://user-images.githubusercontent.com/47494240/54084240-a596ce00-4371-11e9-9eaf-18d11ca65804.png)
+
