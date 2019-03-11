@@ -378,6 +378,26 @@ vim 에디터에서 다시 i키를 누른후 아래와 같이 입력합니다. a
 
 *git commit -m "코멘트"* : 코멘트와 함께 커밋하기
 
+*git commit -a -m "코멘트"* : add 명령을 수행하지 않고 코멘트와 함께 커밋하기(실제로 -a 명령어로 add를 실행함)
+
+*git commit --amend* : 완료한 커밋을 수정     빼먹은 내용을 add후 명령어를 사용
+
+*git diff* : 변경 내용 자세히 살펴보기
+
+*git diff --staged* : 저장소에 커밋한 내용과 staging Area의 내용을 보여줌
+
+*git log* : 히스토리를 조회
+
+*git log -p* : 각 커밋의 diff 결과를 보여줌
+
+*git log -p -2* : 최근 2개의 결과만 보여줌
+
+*git log --stat* : 각 커밋의 통계 정보를 보여줌
+
+*git log --pretty=oneline* : 각 커밋을 한줄로 보여줌
+
+*git log --pretty=format: --graph* : 브랜치와 merge 히스토리를 아스키 그래프로 표현해줌
+
 
 
 *git remote add origin https://github.com/username/userrepository* : 로컬과 원격 저장소를 연결
@@ -389,3 +409,8 @@ vim 에디터에서 다시 i키를 누른후 아래와 같이 입력합니다. a
 *git pull origin master* : Github로 풀 실행
 
 *git clone 원격저장소URL 새폴더명* : 원격저장소 Github URL상의 파일을 새폴더로 복제
+
+
+*git rm 파일명.확장자* : 파일 삭제
+
+*git mv old파일명.확장자 new파일명: old파일명을 new파일명으로 변경
