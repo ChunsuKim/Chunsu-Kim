@@ -380,7 +380,7 @@ vim 에디터에서 다시 i키를 누른후 아래와 같이 입력합니다. a
 
 
 
-*git remote add origin https://github.com/username/userfolder* : 로컬과 원격 저장소를 연결
+*git remote add origin https://github.com/username/userrepository* : 로컬과 원격 저장소를 연결
 
 *git remote -v* : 연결상태 확인
 
