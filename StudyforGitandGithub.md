@@ -394,9 +394,9 @@ vim 에디터에서 다시 i키를 누른후 아래와 같이 입력합니다. a
 
 *git log --stat* : 각 커밋의 통계 정보를 보여줌
 
-*git log --pretty=oneline* : 각 커밋을 한줄로 보여줌
+*git log --oneline* : 각 커밋을 한줄로 보여줌
 
-*git log --pretty=format: --graph* : 브랜치와 merge 히스토리를 아스키 그래프로 표현해줌
+*git log --oneline --graph* : 브랜치와 merge 히스토리를 아스키 그래프로 표현해줌
 
 
 
