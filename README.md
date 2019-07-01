@@ -1,8 +1,11 @@
-Docs: README.md content change
+# Information about Tool
 
-This Repo is Mind :]
+### Explanation of Git and Github
 
-Hello, Pino!!
+[StudyforGitandGithub.md](https://github.com/ChunsuKim/Chunsu-Kim/blob/master/StudyforGitandGithub.md)
 
-source 2
-# Chunsu-Kim
+
+### Vim Editor Command
+
+[VimEditorCommand.md](https://github.com/ChunsuKim/Chunsu-Kim/blob/master/VimEditorCommand.md)
+
