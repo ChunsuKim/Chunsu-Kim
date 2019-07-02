@@ -8,14 +8,14 @@ $ 명령어 [옵션명] [경로명]
 - 옵션명: 명령어를 실행할 때 추가적으로 요구하는 옵션이다.
 
 - 경로명: 절대경로, 상대경로로 표시할 수 있다. 없을 경우는 default 현재 경로이다.
-
+***
 ```bash
 $pwd
 ```
 Print Working Directory
 
 현재 자신이 어느 디렉토리에 위치하는 지 출력한다.
-
+***
 ```bash
 $cd 경로명
 ```
@@ -36,7 +36,7 @@ $cd ~
 // 사용자의 Desktop(바탕화면) 디렉토리로 이동
 $cd ~/Desktop
 ```
-
+***
 ```bash
 $ls [옵션명] [경로명]
 ```
@@ -55,7 +55,7 @@ $ls -l
 // 명시한 경로의 하위 파일/디렉토리 나열
 $ls -l /test/exampleDir
 ```
-
+***
 ```bash
 $cp [원본파일] [대상파일]
 $mv [원본파일] [대상파일]
@@ -78,7 +78,7 @@ $mv /test/exampleFile /newTest/exampleFile
 $cp -r /test/exampleFile /newTest/exampleDir
 $mv -r ./test/exampleDir ./newTest/exampleDir
 ```
-
+***
 ```bash
 $touch 생성할파일명
 $mkdir 생성할경로명
@@ -95,7 +95,7 @@ $touch /test/exampleFile
 // /test 디렉토리에 exampleDir 이름의 빈 디렉토리 생성
 $mkdir /test/exampleDir
 ```
-
+***
 ```bash
 $rm 지울파일명
 $rmdir 지울경로명
@@ -113,7 +113,7 @@ $rm /test/exampleFile
 $rm -rf /test/exampleDir
 $rmdir /test/exampleDir
 ```
-
+***
 
 ```bash
 Other Tip!
@@ -133,7 +133,7 @@ $cp test? ./subdir
 // 현재 경로의 test 2019 (공백 있음) 파일명을 가지는 파일을 ./subdir 디렉토리로 복사
 $cp test\ 2019 ./subdir
 ```
-
+***
 
 관련링크 
 

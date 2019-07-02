@@ -21,6 +21,13 @@ List of Git command
 [GitCommand.md](https://github.com/ChunsuKim/Chunsu-Kim/blob/master/GitCommand.md)
 
 
+### Terminal and iTerm Command
+
+List of Terminal and iTerm command
+
+[Terminal_ITermCommand.md](https://github.com/ChunsuKim/Chunsu-Kim/blob/master/Terminal_ITermCommand.md)
+
+
 
 # 개발도구에 관한 정보 및 사용법
 
@@ -43,3 +50,10 @@ Vim 에디터 명령어 목록
 Git 명령어 목록
 
 [GitCommand.md](https://github.com/ChunsuKim/Chunsu-Kim/blob/master/GitCommand.md)
+
+
+### Terminal 과 iTerm 명령어
+
+Terminal 과 iTerm 명령어 목록
+
+[Terminal_ITermCommand.md](https://github.com/ChunsuKim/Chunsu-Kim/blob/master/Terminal_ITermCommand.md)
