@@ -18,7 +18,7 @@
  Vim or Vi 강제 종료
 
  :wq or :x or ZZ	 
- 저장 후 종
+ 저장 후 종료
 
  :wq!				 
  강제 저장 후 종료
