@@ -159,7 +159,7 @@ git merge <브랜치>
 
 > 커밋하지 않고 합치기
 
-git merge - -no-commit <브랜치>
+git merge --no-commit <브랜치>
 
 
 > 선택하여 합치기
@@ -174,7 +174,7 @@ git cherry-pick -n <커밋명>
 
 > 브랜치의 이력을 다른 브랜치에 합치기
 
-git merge - -squash <브랜치>
+git merge --squash <브랜치>
 
 
 > 브랜치 삭제하기
@@ -212,12 +212,12 @@ git log -20 -p
 
 > 6개월 동안의 커밋 로그 보기
 
-git log - -since=”6 hours”
+git log --since=”6 hours”
 
 
 > 이틀 전까지의 커밋 로그 보기
 
-git log - -before=”2 days”
+git log --before=”2 days”
 
 
 > HEAD보다 세 개 이전의 커밋 로그 보기
@@ -235,19 +235,29 @@ git log <시작 지점>…<끝 지점>
 
     * 시작 지점이나 끝 지점은 커밋명, 브랜치명, 혹은 태그명이 될 수 있고 조합하여 사용 가능하다.
 
+> 각 커밋을 한줄로 보기
+
+git log --oneline
+
+
 > 각 항목의 로그 이력 한 줄씩 보기
 
-git log - -pretty=oneline
+git log --pretty=oneline
+
+
+> 브렌치와 merge 히스토리를 아스키 그래프로 보기
+
+git log --oneline --graph
 
 
 > 각 항목마다 영향 받은 줄의 통계 보기
 
-git log - -stat
+git log --stat
 
 
 > 커밋할 시점의 파일 상태 보기
 
-git log - -name-status
+git log --name-status
 
 
 > 현재 작업 트리와 인덱스의 차이점 보기
@@ -257,7 +267,7 @@ git diff
 
 > 인덱스와 저장소의 차이점 보기
 
-git diff - -cached
+git diff --cached
 
 
 > 작업 트리와 저장소의 차이점 보기
@@ -279,7 +289,7 @@ git diff <시작 지점> <끝 지점>
 
 > 차이점의 통계 보기
 
-git diff - -stat <시작 지점> [<끝 지점>]
+git diff --stat <시작 지점> [<끝 지점>]
 
 
 > 파일의 커밋 정보 줄 단위로 보기
@@ -311,7 +321,7 @@ git clone <저장소>
 
 > 마지막 200개의 커밋만 포함하여 저장소 복제하기
 
-git clone - -depth 200 <저장소>
+git clone --depth 200 <저장소>
 
 
 > 새로운 원격 저장소 추가하기
