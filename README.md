@@ -1,3 +1,9 @@
+# RESUME Link
+[Resume of iOS developer Chunsu Kim](https://chunsukim.github.io/resume/)
+
+# 이력서 링크
+[iOS 개발자 김천수 이력서](https://chunsukim.github.io/resume/)
+
 # Information and Usage about Programming Tools
 
 ### Explanation of Git and Github
